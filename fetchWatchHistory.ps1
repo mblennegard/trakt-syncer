@@ -58,3 +58,42 @@ function Get-LoginToWeb {
         return $response
     }
 }
+
+function Parse-WatchedHistory {
+    [CmdletBinding()]
+    param (
+        # Service
+        [Parameter(Mandatory)]
+        [string]
+        $Service
+    )
+    
+    begin {
+        
+    }
+    
+    process {
+        switch ($Service) {
+            'AmazonPrime' {
+                break
+            }
+            'DisneyPlus' {
+                break
+            }
+            'HboMax' {
+                break
+            }
+            'Netflix' { 
+                break
+            }
+            'Viaplay' {
+                break
+            }
+            Default {}
+        }
+    }
+    
+    end {
+        
+    }
+}
